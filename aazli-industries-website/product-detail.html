@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — AAZLI Industries</title>
+<meta name="description" content="Private-label apparel product details, specifications and customization options from AAZLI Industries." />
+<link rel="icon" href="assets/aazli-logo.jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-[var(--line)]">
+  <div class="grad-line"></div>
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3 shrink-0">
+      <img src="assets/aazli-logo.jpeg" alt="AAZLI Industries logo" class="h-14 w-14 rounded-full object-cover" />
+      <span class="hidden sm:block font-display font-bold text-lg leading-none">AAZLI<br><span class="text-xs font-medium tracking-[0.2em] text-[var(--slate)]">INDUSTRIES</span></span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link" data-nav="home">Home</a>
+      <a href="about.html" class="nav-link" data-nav="about">About</a>
+      <a href="products.html" class="nav-link" data-nav="products" style="color:var(--orange);font-weight:700">Products</a>
+      <a href="services.html" class="nav-link" data-nav="services">Capabilities</a>
+      <a href="industries.html" class="nav-link" data-nav="industries">Industries</a>
+      <a href="process.html" class="nav-link" data-nav="process">Process</a>
+      <a href="faq.html" class="nav-link" data-nav="faq">FAQ</a>
+      <a href="contact.html" class="nav-link" data-nav="contact">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="request-quote.html" class="hidden sm:inline-flex btn-grad !py-2.5 !px-4 !text-sm">Request a Quote</a>
+      <button id="menuBtn" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5" aria-label="Open menu">
+        <span class="block w-6 h-0.5 bg-[var(--ink)]"></span>
+        <span class="block w-6 h-0.5 bg-[var(--ink)]"></span>
+        <span class="block w-6 h-0.5 bg-[var(--ink)]"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="mobile-menu fixed inset-0 z-50 bg-[var(--ink)] text-white lg:hidden">
+  <div class="flex items-center justify-between px-6 h-20 border-b border-white/10">
+    <span class="font-display font-bold">AAZLI INDUSTRIES</span>
+    <button id="menuCloseBtn" class="w-10 h-10 text-2xl" aria-label="Close menu">&times;</button>
+  </div>
+  <nav class="flex flex-col px-6 py-8 gap-6 text-lg font-display">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Capabilities</a>
+    <a href="industries.html">Industries</a>
+    <a href="process.html">Process</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="request-quote.html" class="btn-grad w-fit mt-2">Request a Quote</a>
+  </nav>
+</div>
+
+
+<section class="max-w-7xl mx-auto px-5 sm:px-8 py-14 sm:py-16">
+  <div id="productDetail"></div>
+</section>
+
+<section id="relatedProductsWrap" class="bg-white border-y border-[var(--line)]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16">
+    <span class="eyebrow">Related Products</span>
+    <h2 class="font-display text-2xl sm:text-3xl font-bold mt-2 mb-8">You might also need</h2>
+    <div id="relatedProducts" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<section class="grad-bg">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 flex flex-col sm:flex-row items-center justify-between gap-6 text-white text-center sm:text-left">
+    <div>
+      <h3 class="font-display text-2xl font-bold">Ready to put your brand into production?</h3>
+      <p class="text-white/85 mt-1">Tell us what you need — get a tailored quote from AAZLI Industries.</p>
+    </div>
+    <a href="request-quote.html" class="inline-flex items-center gap-2 bg-white text-[var(--ink)] font-semibold px-7 py-3.5 clip-path-none shrink-0 hover:bg-[var(--paper)] transition" style="clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);">Request a Custom Quote</a>
+  </div>
+</section>
+
+<footer class="bg-[var(--ink)] text-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="assets/aazli-logo.jpeg" alt="AAZLI Industries logo" class="h-12 w-12 rounded-full object-cover" />
+        <span class="font-display font-bold">AAZLI INDUSTRIES</span>
+      </div>
+      <p class="text-white/60 text-sm leading-relaxed">AAZLI Industries is a Sialkot-based private-label apparel manufacturer supporting startups, brands and distributors worldwide with low-MOQ, custom-branded production across T-shirts, hoodies, activewear and streetwear.</p>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold mb-4 text-sm tracking-wide uppercase text-white/50">Products</h4>
+      <ul class="space-y-2.5 text-sm text-white/75">
+        <li><a href="products.html?category=tshirts" class="hover:text-white">T-Shirts</a></li>
+        <li><a href="products.html?category=hoodies" class="hover:text-white">Hoodies &amp; Sweatshirts</a></li>
+        <li><a href="products.html?category=activewear" class="hover:text-white">Activewear &amp; Sportswear</a></li>
+        <li><a href="products.html?category=streetwear" class="hover:text-white">Streetwear Essentials</a></li>
+        <li><a href="products.html" class="hover:text-white">View All Products</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold mb-4 text-sm tracking-wide uppercase text-white/50">Company</h4>
+      <ul class="space-y-2.5 text-sm text-white/75">
+        <li><a href="about.html" class="hover:text-white">About AAZLI</a></li>
+        <li><a href="services.html" class="hover:text-white">Manufacturing Capabilities</a></li>
+        <li><a href="process.html" class="hover:text-white">Our Process</a></li>
+        <li><a href="industries.html" class="hover:text-white">Industries We Serve</a></li>
+        <li><a href="faq.html" class="hover:text-white">FAQs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold mb-4 text-sm tracking-wide uppercase text-white/50">Contact</h4>
+      <ul class="space-y-2.5 text-sm text-white/75">
+        <li>Email: info@aazliindustries.com</li>
+        <li>WhatsApp: +92 300 1234567</li>
+        <li>Address: Small Industrial Estate, Sialkot, Punjab, Pakistan</li>
+      </ul>
+      <div class="flex gap-4 mt-5 text-sm text-white/70">
+        <a href="#" class="hover:text-white">Instagram</a>
+        <a href="#" class="hover:text-white">Facebook</a>
+        <a href="#" class="hover:text-white">LinkedIn</a>
+      </div>
+      <p class="text-[11px] text-white/35 mt-2">Example links — connect your real profiles when ready.</p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+      <p>&copy; 2026 AAZLI Industries. All rights reserved.</p>
+      <p>All company details on this preview are example content pending confirmation.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
